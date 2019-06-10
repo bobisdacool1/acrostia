@@ -1,0 +1,18 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.wrap {
+  background-color: #a1ca6c;
+  border-radius: 5px; }
+  .wrap .kek {
+    color: #ffffff;
+    font-family: "Lato - Black", sans-serif;
+    font-seize: 25px;
+    font-weight: 900;
+    line-height: 58px;
+    text-transform: uppercase;
+    margin: 0 42px; }
+
+/*# sourceMappingURL=test.css.map */
