@@ -1,5 +1,11 @@
 a {
   text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fff;
 }
 
 .container-fluid {
@@ -399,6 +405,8 @@ navbar {
 }
 
 #about .guy-img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   top: 50px;
   width: 164px;
   height: 164px;
@@ -407,7 +415,6 @@ navbar {
   background-size: auto;
   background-position: center;
   z-index: 2;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 

@@ -35,6 +35,9 @@ $(function () {
     $('a[href=""]').click(function () {
         return false;
     });
+    $('a[href="tel:+44555555555"]').click(function () {
+        return false;
+    });
 })
 // WORKS SECTION
 $(".work").hover (console.log('lol')
