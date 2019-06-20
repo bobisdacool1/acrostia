@@ -37,10 +37,8 @@ $(function () {
     });
 })
 // WORKS SECTION
-$(".work").mousein (function() {
-    console.log('cool')
-    $(".name").css("display", "none")
-})
-$(".work").mouseout (function(){
-    $("body").css("display", "none")
-})
+$(".work").hover (console.log('lol')
+);
+$(".work").mouseleave (
+    console.log('lol')
+)
