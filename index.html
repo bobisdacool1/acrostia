@@ -9,12 +9,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="libs/normalize.css">
     <link rel="stylesheet" href="libs/bootstrap-grid.min.css">
+
     <link href="https://fonts.googleapis.com/css?family=Damion|Lato:300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="libs/slick-theme.css">
     <link rel="stylesheet" href="libs/slick.css">
-    <link rel="stylesheet" href="libs/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.css">     -->
+    <!-- <link rel="stylesheet" href="libs/bootstrap.min.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="sass/style.css">
+
 </head>
 
 <body>
@@ -30,33 +33,35 @@
             </ul>
         </navbar>
     </div>
-    <div class="carousel">
-        <div class="hero" id="hero">
-            <div class="container hero-desc-wrap">
-                <div class="hero-desc">
-                    <div class="hero-desc__left">GOOD IDEAS <br> comes</div>
-                    <div class="hero-desc__right" style="color: #74c7d5">FIRST!</div>
+    <div class="hero" id="hero">
+            <div class="arrow" id="arrow-left"></div>
+            <div class="carousel">
+                <div class="hero-desc-wrap first-slide">
+                    <div class="hero-desc">
+                        <div class="hero-desc__left">GOOD IDEAS <br> comes</div>
+                        <div class="hero-desc__right" style="color: #74c7d5">FIRST!</div>
+                    </div>
+                </div>
+                <div class="hero-desc-wrap second-slide" style="display: none">
+                    <div class="hero-desc">
+                        <div class="hero-desc__left">GOOD IDEAS <br> comes</div>
+                        <div class="hero-desc__right" style="color: #74c7d5">FIRST!</div>
+                    </div>
+                </div>
+                <div class="hero-desc-wrap third-slide" style="display: none">
+                    <div class="hero-desc">
+                        <div class="hero-desc__left">GOOD IDEAS <br> comes</div>
+                        <div class="hero-desc__right" style="color: #74c7d5">FIRST!</div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="hero">
-            <div class="container hero-desc-wrap">
-                <div class="hero-desc">
-                    <div class="hero-desc__left">GOOD IDEAS <br> comes</div>
-                    <div class="hero-desc__right">FIRST!</div>
-                </div>
+            <div class="arrow" id="arrow-right"></div>
+            <div class="points-wrap">
+                <div class="point point-active" id="point-1"></div>
+                <div class="point" id="point-2"></div>
+                <div class="point" id="point-3"></div>
             </div>
         </div>
-        <div class="hero">
-            <div class="container hero-desc-wrap">
-                <div class="hero-desc">
-                    <div class="hero-desc__left">GOOD IDEAS <br> comes</div>
-                    <div class="hero-desc__right">FIRST!</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
     <section class="services" id="services">
         <div class="container">
             <navbar>
@@ -73,10 +78,13 @@
         <div class="container">
             <div class="section-desc">
                 <h1>OUR SERVICES</h1>
-                <h3> Cras commodo mattis justo nec <span>lobortis</span>. Nam ut tellus lobortis, ullamcorper massa sit amet
+                <h3> Cras commodo mattis justo nec <span>lobortis</span>. Nam ut tellus lobortis, ullamcorper massa sit
+                    amet
                 </h3>
-                <p>Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat
-                    rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante
+                <p>Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet
+                    erat
+                    rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at
+                    ante
                     vitae
                     justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.
                 </p>
@@ -86,7 +94,8 @@
                     <div class="serivse-item">
                         <img src="img/lamp.png" alt="lamp">
                         <h2>Researching</h2>
-                        <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate
+                        <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in
+                            voluptate
                             velit
                             esse
                             cillum dolore.
@@ -97,7 +106,8 @@
                     <div class="serivse-item">
                         <img src="img/magic-wand.png" alt="wand">
                         <h2>DESIGN</h2>
-                        <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate
+                        <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in
+                            voluptate
                             velit
                             esse
                             cillum dolore.
@@ -108,7 +118,8 @@
                     <div class="serivse-item">
                         <img src="img/gear.png" alt="gear">
                         <h2>Development</h2>
-                        <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate
+                        <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in
+                            voluptate
                             velit
                             esse
                             cillum dolore.
@@ -119,7 +130,8 @@
                     <div class="serivse-item">
                         <img src="img/rocket.png" alt="rocket">
                         <h2>launch</h2>
-                        <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate
+                        <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in
+                            voluptate
                             velit
                             esse
                             cillum dolore.
@@ -145,9 +157,12 @@
         <div class="container">
             <div class="section-desc">
                 <h1>Who we are & what we do</h1>
-                <p>Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat
-                    rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante
-                    vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.
+                <p>Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet
+                    erat
+                    rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at
+                    ante
+                    vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere
+                    quis.
                 </p>
                 <div class="meet">Meet the team</div>
             </div>
@@ -253,9 +268,12 @@
             </navbar>
             <div class="section-desc">
                 <h1>our work</h1>
-                <p>Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat
-                    rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante
-                    vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.
+                <p>Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet
+                    erat
+                    rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at
+                    ante
+                    vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere
+                    quis.
                 </p>
             </div>
             <div class="line"></div>
@@ -342,9 +360,12 @@
             </navbar>
             <div class="section-desc">
                 <h1>oCONTACT US</h1>
-                <p>Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat
-                    rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante
-                    vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.
+                <p>Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet
+                    erat
+                    rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at
+                    ante
+                    vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere
+                    quis.
                 </p>
             </div>
             <div class="row contacts">
@@ -364,7 +385,8 @@
                         </div>
                         <div class="item">
                             <div class="non-soc-name">Email</div>
-                            <div class="non-soc-value emailkek"><a href="mailto:info@acrostia.com">info@acrostia.com</a></div>
+                            <div class="non-soc-value emailkek"><a href="mailto:info@acrostia.com">info@acrostia.com</a>
+                            </div>
                         </div>
                         <div class="item">
                             <div class="non-soc-name">Phone</div>
@@ -381,10 +403,13 @@
                     <label for="form">Ask a question</label>
                     <form onsubmit="return false;" name="form" id="form">
                         <div class="two">
-                            <input required type="text" class="form-field" name="Name" placeholder="Как нам к вам обращаться?">
-                            <input required type="email" class="form-field" name="Email" placeholder="Введите Ваш email">
+                            <input required type="text" class="form-field" name="Name"
+                                placeholder="Как нам к вам обращаться?">
+                            <input required type="email" class="form-field" name="Email"
+                                placeholder="Введите Ваш email">
                         </div>
-                        <textarea required class="form-field textarea" name="ques" id="ques" cols="41" rows="10" placeholder="В чем заключается Ваш вопрос?"></textarea>
+                        <textarea required class="form-field textarea" name="ques" id="ques" cols="41" rows="10"
+                            placeholder="В чем заключается Ваш вопрос?"></textarea>
                         <button class="form-button"><span class="text-button">Отправить заявку</span></button>
                     </form>
                 </div>
@@ -411,6 +436,7 @@
     <!--<script type="text/javascript" src="libs/bootstrap.min.js"></script>-->
     <script type="text/javascript" src="libs/slick.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> -->
 </body>
 
 </html>

@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="utf-8">
-  <title>Цвет текста и фона</title>
-  <style>
 
-   .colortext::placeholder{
-       color: red
-   }
-  </style>
- </head>
- <body>
-  <form method="post" action="handler.php">
-   <p><input type="text" placeholder="kek" class="colortext">
-   <input type="submit" name="Submit" value="Послать"></p>
-  </form>
- </body>
+<head>
+    <meta charset="utf-8">
+    <title>Цвет текста и фона</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+    <div class="kekous first">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</div>
+    <div class="kekous second">Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты.</div>
+    <div class="kekous">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</div>
+    <div class="kekous">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</div>
+    <div class="kekous">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</div>
+    <div class="kekous">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</div>
+</body>
+
+<script src="../libs/jquery-3.4.1.min.js"></script>
+<script>
+    $('.kekous').css('display', 'none');
+    $('.first').css('display', 'flex')
+    $('.kekous').click(function() {
+        $(this).fadeOut(300)
+        $('.second').fadeIn(300)
+    })
+</script>
 </html>
