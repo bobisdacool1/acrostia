@@ -1,12 +1,12 @@
 .works
   background-color: #81a256
   background-image: url("../img/works-bg.png")
-  min-height: 1050px
+  min-height: 1250px
   background-repeat: no-repeat
   background-position: center
   position: relative
   bottom: 21px
-  padding-bottom: 40px
+  transition: 0.3s
   .active
     background-color: #a1ca6c
   p
@@ -53,6 +53,7 @@
     img
       border-radius: 5px
       max-width: 100%
+      transition: 0.15s
     .name, span
       color: #727272
       font-size: 14px
@@ -75,19 +76,29 @@
     border-right: 20px solid transparent
     bottom: 51px
     right:  45px
-
+    display: inline
 .plus
   display: none
+  transition: 0.3s
 .work.hover
+  transition: 0.3s
   img
-    filter: blur(10px)
+    filter: blur(7px)
+    transition: 0.3s
   .plus
     display: inline!important 
     z-index: 30
     position: absolute
     bottom: 125px
     left: 125px
+    transition: 0.3s
     img
+      transition: 0.3s
       filter: blur(0)!important
+  .name.hidden::after
+    display: none
+  .name.hidden
+    position: relative
+    right: 20px
 .line-end
   margin-bottom: 40px

@@ -599,12 +599,13 @@ navbar {
 .works {
   background-color: #81a256;
   background-image: url("../img/works-bg.png");
-  min-height: 1050px;
+  min-height: 1250px;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
   bottom: 21px;
-  padding-bottom: 40px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .works .active {
@@ -687,6 +688,8 @@ navbar {
 .photo-ex .work img {
   border-radius: 5px;
   max-width: 100%;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
 }
 
 .photo-ex .work .name, .photo-ex .work span {
@@ -715,15 +718,25 @@ navbar {
   border-right: 20px solid transparent;
   bottom: 51px;
   right: 45px;
+  display: inline;
 }
 
 .plus {
   display: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.work.hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .work.hover img {
-  -webkit-filter: blur(10px);
-          filter: blur(10px);
+  -webkit-filter: blur(7px);
+          filter: blur(7px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .work.hover .plus {
@@ -732,11 +745,24 @@ navbar {
   position: absolute;
   bottom: 125px;
   left: 125px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .work.hover .plus img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   -webkit-filter: blur(0) !important;
           filter: blur(0) !important;
+}
+
+.work.hover .name.hidden::after {
+  display: none;
+}
+
+.work.hover .name.hidden {
+  position: relative;
+  right: 20px;
 }
 
 .line-end {

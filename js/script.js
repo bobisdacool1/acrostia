@@ -36,7 +36,9 @@ function scrollToThe(id, ofefset) {
 $('a[href=""]').click(function() {
     return false;
 });
-//slider
+///////////////////////////////////////////////
+//////////////////slider///////////////////////
+///////////////////////////////////////////////
 function slideSS(ziga){
     console.log('u gay')
     if (ziga == 0){
@@ -58,27 +60,6 @@ function slideSS(ziga){
         $('#point-3').addClass('point-active')
     }
 }
-// $('.kekous').click(function() {
-//     $(this).fadeOut(300)
-//     $('.second').fadeIn(300)
-// })
-/////////////////////////////////////
-// function slideSS(ziga){
-//     console.log(ziga)
-//     if (curretSlide = 0){
-//         console.log('it is one')
-//     //     $('hero-desc-wrap').css('display', 'none')
-//     //     $('first-slide').css('display', 'flex')
-//     }
-//     // if (curretSlide = 1){
-//     //     $('hero-desc-wrap').css('display', 'none')
-//     //     $('second-slide').css('display', 'flex')
-//     // } 
-//     // if (curretSlide = 2){
-//     //     $('hero-desc-wrap').css('display', 'none')
-//     //     $('third-slide').css('display', 'flex')
-//     // } 
-// }
 
 var curretSlide = 0
 $('#arrow-left').click(function () {
@@ -108,6 +89,18 @@ $('#point-2').click(function(){
     slideSS(curretSlide)
 })
 $('#point-3').click(function(){
-    curretSlide = 3
+    curretSlide = 2
     slideSS(curretSlide)
 })
+///////////////////////////////////////////////////////
+/////////////////////Protfolio/////////////////////////
+///////////////////////////////////////////////////////
+
+$('.work').mouseenter(function(){
+    $(this).addClass('hover')
+    $('.name').addClass('hidden')
+})
+$('.work').mouseleave(function(){
+    $(this).removeClass('hover')
+    $('.name').removeClass('hidden')
+})  
