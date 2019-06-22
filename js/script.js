@@ -104,3 +104,19 @@ $('.work').mouseleave(function(){
     $(this).removeClass('hover')
     $('.name').removeClass('hidden')
 })  
+$('.category-item').click(function(){
+    $('.category-item').removeClass('active')
+    $(this).addClass('active')
+})
+$('#all').click(function(){
+    $('.work-desc').text('logo')
+})
+$('#photo').click(function(){
+    $('.work-desc').text('Photo design')
+})
+$('#logo').click(function(){
+    $('.work-desc').text('Logo design')
+})
+$('#web').click(function(){
+    $('.work-desc').text('Web design')
+})

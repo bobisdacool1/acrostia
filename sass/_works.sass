@@ -25,80 +25,87 @@
     font-size: 20px
     line-height: 24px
     font-weight: 700
-
 .category-wrap
   width: 45%
   display: flex
   justify-content: space-between
   align-items: center
-
 .category-item
   font-size: 16px
   font-weight: 700
   line-height: 24px
-
-.photo-ex
-  .work
-    margin: 10px
-    background-color: #fff
-    border-radius: 6px
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-    text-align: center
-    align-content: center
-    width: 100%
-    background-color: #eeeeee
-    img
-      border-radius: 5px
-      max-width: 100%
-      transition: 0.15s
-    .name, span
-      color: #727272
-      font-size: 14px
-      font-weight: 400
-      line-height: 58px
-      text-align: center
-      text-transform: uppercase
-    span
-      margin: 0 auto
-      text-align: center
-      position: relative
-      left: 22px
-  .name::after
-    position: relative
-    content: ''
-    width: 0
-    height: 0
-    border-bottom: 15px solid #eeeeee
-    border-left: 20px solid transparent
-    border-right: 20px solid transparent
-    bottom: 51px
-    right:  45px
-    display: inline
-.plus
-  display: none
+  padding: 8px
+  cursor: pointer
   transition: 0.3s
+  &.active
+    background-color: #f5c149
+    border-radius: 7px
+.work
+  height: 250px
+  margin-bottom: 20px
+.work-img
+  height: 200px 
+  background-repeat: no-repeat
+  background-position: center center
+  transition: 0.3s
+  &-1
+    background-image: url(../img/p-work-1.png)
+  &-2
+    background-image: url(../img/p-work-2.png)
+  &-3
+    background-image: url(../img/p-work-3.png)
+  &-4
+    background-image: url(../img/p-work-4.png)
+  &-5
+    background-image: url(../img/p-work-5.png)
+  &-6
+    background-image: url(../img/p-work-6.png)
+  &-7
+    background-image: url(../img/p-work-7.png)
+  &-8
+    background-image: url(../img/p-work-8.png)
+.work-desc
+  position: relative
+  bottom: 1px
+  background-color: #eee
+  color: #727272
+  text-align: center
+  padding: 20px
+  border-bottom-left-radius: 5px
+  border-bottom-right-radius: 5px
+//hover
 .work.hover
   transition: 0.3s
-  img
-    filter: blur(7px)
-    transition: 0.3s
+  .work-img
+    filter: blur(4px)
   .plus
-    display: inline!important 
-    z-index: 30
-    position: absolute
-    bottom: 125px
-    left: 125px
-    transition: 0.3s
-    img
-      transition: 0.3s
-      filter: blur(0)!important
-  .name.hidden::after
-    display: none
-  .name.hidden
-    position: relative
-    right: 20px
-.line-end
-  margin-bottom: 40px
+    display: inline
+.work::after
+  position: relative
+  content: ''
+  width: 0
+  height: 0
+  border-bottom: 20px solid #eeeeee
+  border-left: 18px solid transparent
+  border-right: 18px solid transparent
+  display: inline
+  z-index:  999
+  left: 107px
+  bottom: 95px
+.plus
+  position: absolute
+  z-index: 999
+  bottom: 134px
+  left: 113px
+  background-repeat: no-repeat
+  background-color: 
+  background-position: center center
+  z-index: 999
+  width: 50px
+  height: 50px
+  cursor: pointer
+  transition: 0.3s
+  background-image: none
+.work.hover .plus
+  transition: 0.3s
+  background-image: url(../img/plus.png)
