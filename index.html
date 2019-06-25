@@ -22,46 +22,47 @@
 
 <body>
     <div class="container container-hero">
-        <navbar>
+        <navbar class="navbar-main">
+            <a href="" class="btn-wrap"><span class="menu-btn"></span></a>
             <div class="logo">acrostia</div>
             <ul class="nav">
-                <li class="active1"><a href="" onclick="scrollToThe ('#hero')">Home</a></li>
-                <li><a href="" onclick="scrollToThe ('#services')">Services</a></li>
-                <li><a href="" onclick="scrollToThe ('#about')">About</a></li>
-                <li><a href="" onclick="scrollToThe ('#works')">Work</a></li>
-                <li><a href="" onclick="scrollToThe ('#contacts')">Contacts</a></li>
+                <li class="active1" data-number="1"><a href="" onclick="scrollToThe ('#hero')">Home</a></li>
+                <li data-number="2"><a href="" onclick="scrollToThe ('#services')">Services</a></li>
+                <li data-number="3"><a href="" onclick="scrollToThe ('#about')">About</a></li>
+                <li data-number="4"><a href="" onclick="scrollToThe ('#works')">Work</a></li>
+                <li data-number="5"><a href="" onclick="scrollToThe ('#contacts')">Contacts</a></li>
             </ul>
         </navbar>
     </div>
     <div class="hero" id="hero">
-            <div class="arrow" id="arrow-left"></div>
-            <div class="carousel">
-                <div class="hero-desc-wrap first-slide">
-                    <div class="hero-desc">
-                        <div class="hero-desc__left">GOOD IDEAS <br> comes</div>
-                        <div class="hero-desc__right" style="color: #74c7d5">FIRST!</div>
-                    </div>
-                </div>
-                <div class="hero-desc-wrap second-slide" style="display: none">
-                    <div class="hero-desc">
-                        <div class="hero-desc__left">GOOD IDEAS <br> comes</div>
-                        <div class="hero-desc__right" style="color: #74c7d5">Second!</div>
-                    </div>
-                </div>
-                <div class="hero-desc-wrap third-slide" style="display: none">
-                    <div class="hero-desc">
-                        <div class="hero-desc__left">GOOD IDEAS <br> comes</div>
-                        <div class="hero-desc__right" style="color: #74c7d5">third!</div>
-                    </div>
+        <div class="arrow" id="arrow-left"></div>
+        <div class="carousel">
+            <div class="hero-desc-wrap first-slide">
+                <div class="hero-desc">
+                    <div class="hero-desc__left">GOOD IDEAS <br> comes</div>
+                    <div class="hero-desc__right" style="color: #74c7d5">FIRST!</div>
                 </div>
             </div>
-            <div class="arrow" id="arrow-right"></div>
-            <div class="points-wrap">
-                <div class="point point-active" id="point-1"></div>
-                <div class="point" id="point-2"></div>
-                <div class="point" id="point-3"></div>
+            <div class="hero-desc-wrap second-slide" style="display: none">
+                <div class="hero-desc">
+                    <div class="hero-desc__left">GOOD IDEAS <br> comes</div>
+                    <div class="hero-desc__right" style="color: #74c7d5">Second!</div>
+                </div>
+            </div>
+            <div class="hero-desc-wrap third-slide" style="display: none">
+                <div class="hero-desc">
+                    <div class="hero-desc__left">GOOD IDEAS <br> comes</div>
+                    <div class="hero-desc__right" style="color: #74c7d5">third!</div>
+                </div>
             </div>
         </div>
+        <div class="arrow" id="arrow-right"></div>
+        <div class="points-wrap">
+            <div class="point point-active" id="point-1"></div>
+            <div class="point" id="point-2"></div>
+            <div class="point" id="point-3"></div>
+        </div>
+    </div>
     <section class="services" id="services">
         <div class="container">
             <navbar>
@@ -78,7 +79,8 @@
         <div class="container">
             <div class="section-desc">
                 <h1>OUR SERVICES</h1>
-                <h3> Cras commodo mattis justo nec <span>lobortis</span>. Nam ut tellus lobortis, ullamcorper massa sit
+                <h3 class="section-h3"> Cras commodo mattis justo nec <span>lobortis</span>. Nam ut tellus lobortis,
+                    ullamcorper massa sit
                     amet
                 </h3>
                 <p>Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet
@@ -90,7 +92,7 @@
                 </p>
             </div>
             <div class="row">
-                <div class="wrap col-sm-3">
+                <div class="wrap col-sm-6 col-lg-3">
                     <div class="serivse-item">
                         <img src="img/lamp.png" alt="lamp">
                         <h2>Researching</h2>
@@ -102,7 +104,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="wrap col-sm-3">
+                <div class="wrap col-sm-6 col-lg-3">
                     <div class="serivse-item">
                         <img src="img/magic-wand.png" alt="wand">
                         <h2>DESIGN</h2>
@@ -114,7 +116,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="wrap col-sm-3">
+                <div class="wrap col-sm-6 col-lg-3">
                     <div class="serivse-item">
                         <img src="img/gear.png" alt="gear">
                         <h2>Development</h2>
@@ -126,7 +128,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="wrap col-sm-3">
+                <div class="wrap col-sm-6 col-lg-3">
                     <div class="serivse-item">
                         <img src="img/rocket.png" alt="rocket">
                         <h2>launch</h2>
@@ -164,10 +166,10 @@
                     vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere
                     quis.
                 </p>
-                <div class="meet">Meet the team</div>
+                <div class="meet"><span>Meet the team</span></div>
             </div>
             <div class="row">
-                <div class="wrap col-sm-3">
+                <div class="wrap col-lg-3 col-sm-6">
                     <div class="serivse-item service-item-about">
                         <div class="guy-img"></div>
                         <h2>Anton Petrov</h2>
@@ -188,7 +190,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="wrap col-sm-3">
+                <div class="wrap col-lg-3 col-sm-6">
                     <div class="serivse-item service-item-about">
                         <div class="guy-img"></div>
                         <h2>Kirl DONCHEV</h2>
@@ -209,7 +211,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="wrap col-sm-3">
+                <div class="wrap col-lg-3 col-sm-6">
                     <div class="serivse-item service-item-about">
                         <div class="guy-img"></div>
                         <h2>Ilian Bonev</h2>
@@ -230,7 +232,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="wrap col-sm-3">
+                <div class="wrap col-lg-3 col-sm-6">
                     <div class="serivse-item service-item-about">
                         <div class="guy-img"></div>
                         <h2>Doni Stamov</h2>
@@ -289,59 +291,75 @@
             <div class="line line-end"></div>
             <div class="works">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-12 col-sm-6 col-lg-3">
                         <div class="work">
                             <div class="work-img work-img-1"></div>
-                            <a href=""><div class="plus hidden"></div></a>
+                            <a href="">
+                                <div class="plus hidden"></div>
+                            </a>
                             <div class="work-desc">photo</div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-12 col-sm-6 col-lg-3">
                         <div class="work">
                             <div class="work-img work-img-2"></div>
-                            <a href=""><div class="plus hidden"></div></a>
+                            <a href="">
+                                <div class="plus hidden"></div>
+                            </a>
                             <div class="work-desc">photo</div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-12 col-sm-6 col-lg-3">
                         <div class="work">
                             <div class="work-img work-img-3"></div>
-                            <a href=""><div class="plus hidden"></div></a>
+                            <a href="">
+                                <div class="plus hidden"></div>
+                            </a>
                             <div class="work-desc">photo</div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-12 col-sm-6 col-lg-3">
                         <div class="work">
                             <div class="work-img work-img-4"></div>
-                            <a href=""><div class="plus hidden"></div></a>
+                            <a href="">
+                                <div class="plus hidden"></div>
+                            </a>
                             <div class="work-desc">photo</div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-12 col-sm-6 col-lg-3">
                         <div class="work">
                             <div class="work-img work-img-5"></div>
-                            <a href=""><div class="plus hidden"></div></a>
+                            <a href="">
+                                <div class="plus hidden"></div>
+                            </a>
                             <div class="work-desc">photo</div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-12 col-sm-6 col-lg-3">
                         <div class="work">
                             <div class="work-img work-img-6"></div>
-                            <a href=""><div class="plus hidden"></div></a>
+                            <a href="">
+                                <div class="plus hidden"></div>
+                            </a>
                             <div class="work-desc">photo</div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-12 col-sm-6 col-lg-3">
                         <div class="work">
                             <div class="work-img work-img-7"></div>
-                            <a href=""><div class="plus hidden"></div></a>
+                            <a href="">
+                                <div class="plus hidden"></div>
+                            </a>
                             <div class="work-desc">photo</div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-12 col-sm-6 col-lg-3">
                         <div class="work">
                             <div class="work-img work-img-8"></div>
-                            <a href=""><div class="plus hidden"></div></a>
+                            <a href="">
+                                <div class="plus hidden"></div>
+                            </a>
                             <div class="work-desc">photo</div>
                         </div>
                     </div>
@@ -362,7 +380,7 @@
                 </ul>
             </navbar>
             <div class="section-desc">
-                <h1>oCONTACT US</h1>
+                <h1>CONTACT US</h1>
                 <p>Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet
                     erat
                     rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at
@@ -372,7 +390,7 @@
                 </p>
             </div>
             <div class="row contacts">
-                <div class="col-md-3 address">
+                <div class="col-xl-3 col--sm-7 address">
                     <span>Address</span>
                     <div class="country">Acrostia</div>
                     <div class="main-add">Sevenoaks Rd <br> Sevenoaks TN14 7HR, UK</div>
@@ -397,9 +415,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 map"><img src="img/map.png" alt=""></div>
-
-                <div class="col-md-6 form">
+                <div class="col-xl-3 col-sm-5 map"><img src="img/map.png" alt=""></div>
+                <div class="col-xl-6 col-sm-12 
+                form">
                     <input type="hidden" name="project_name" value="Заявка">
                     <input type="hidden" name="admin_email" value="bobisdacool1@yandex.ru">
                     <input type="hidden" name="form_subject" value="Form Subject">
@@ -407,7 +425,7 @@
                     <form onsubmit="return false;" name="form" id="form">
                         <div class="two">
                             <input required type="text" class="form-field" name="Name"
-                                placeholder="Как нам к вам обращаться?">
+                                placeholder="Как к вам обращаться?">
                             <input required type="email" class="form-field" name="Email"
                                 placeholder="Введите Ваш email">
                         </div>
@@ -420,19 +438,21 @@
         </div>
     </section>
     <footer class="footer" id="footer">
-        <div class="link-wrap">
-            <a href="">
-                <div class="link-item facebook"><img src="img/facebook.png" alt=""></div>
-            </a>
-            <a href="">
-                <div class="link-item twit"><img src="img/twit.png" alt=""></div>
-            </a>
-            <a href="">
-                <div class="link-item ggp"><img src="img/ggp.png" alt=""></div>
-            </a>
-            <a href="">
-                <div class="link-item lin"><img src="img/lin.png" alt=""></div>
-            </a>
+        <div class="container">
+            <div class="link-wrap">
+                <a href="">
+                    <div class="link-item facebook"><img src="img/facebook.png" alt=""></div>
+                </a>
+                <a href="">
+                    <div class="link-item twit"><img src="img/twit.png" alt=""></div>
+                </a>
+                <a href="">
+                    <div class="link-item ggp"><img src="img/ggp.png" alt=""></div>
+                </a>
+                <a href="">
+                    <div class="link-item lin"><img src="img/lin.png" alt=""></div>
+                </a>
+            </div>
         </div>
     </footer>
     <script type="text/javascript" src="libs/jquery-3.4.1.min.js"></script>

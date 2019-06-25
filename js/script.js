@@ -17,7 +17,6 @@ $(document).ready(function () {
     });
 
 });
-
 var ofefset = 0
 function scrollToThe(id, ofefset) {
     if (ofefset == undefined) {
@@ -31,29 +30,52 @@ function scrollToThe(id, ofefset) {
             scrollTop: $(id).offset().top - ofefset
         }, 1200)
     }
+
     return false
 }
-$('a[href=""]').click(function() {
+///////////////////////////////////////////////
+//////////////responsive menu//////////////////
+///////////////////////////////////////////////
+var docWidth = $('body').width()
+function scrollMenuToggle(li){
+    var clickedId = li.data('number')
+    $('.nav li').removeClass()
+    li.addClass('active' + clickedId)
+    $('.navbar-main.active').removeClass('active') 
+    return false
+}
+if (docWidth <= 576) {
+    $('.nav a').click(function(){
+        var kkk = $(this).parent()
+        scrollMenuToggle(kkk)
+    })
+
+}
+
+$('.btn-wrap').click(function(){
+    $('.navbar-main').toggleClass('active')
+})
+$('a[href=""]').click(function () {
     return false;
 });
 ///////////////////////////////////////////////
 //////////////////slider///////////////////////
 ///////////////////////////////////////////////
-function slideSS(ziga){
+function slideSS(ziga) {
     console.log('u gay')
-    if (ziga == 0){
+    if (ziga == 0) {
         $('.hero-desc-wrap').fadeOut(300)
         $('.first-slide').fadeIn(300)
         $('.point').removeClass('point-active')
         $('#point-1').addClass('point-active')
     }
-    if (ziga == 1){
+    if (ziga == 1) {
         $('.hero-desc-wrap').fadeOut(300)
         $('.second-slide').fadeIn(300)
         $('.point').removeClass('point-active')
         $('#point-2').addClass('point-active')
     }
-    if (ziga == 2){
+    if (ziga == 2) {
         $('.hero-desc-wrap').fadeOut(300)
         $('.third-slide').fadeIn(300)
         $('.point').removeClass('point-active')
@@ -63,7 +85,7 @@ function slideSS(ziga){
 
 var curretSlide = 0
 $('#arrow-left').click(function () {
-    if (curretSlide != 0){
+    if (curretSlide != 0) {
         curretSlide--
     } else {
         curretSlide = 2
@@ -71,8 +93,8 @@ $('#arrow-left').click(function () {
     console.log(curretSlide)
     slideSS(curretSlide)
 })
-$('#arrow-right').click(function(){
-    if (curretSlide != 2){
+$('#arrow-right').click(function () {
+    if (curretSlide != 2) {
         curretSlide++
     } else {
         curretSlide = 0
@@ -80,15 +102,15 @@ $('#arrow-right').click(function(){
     console.log(curretSlide)
     slideSS(curretSlide)
 })
-$('#point-1').click(function(){
+$('#point-1').click(function () {
     curretSlide = 0
     slideSS(curretSlide)
 })
-$('#point-2').click(function(){
+$('#point-2').click(function () {
     curretSlide = 1
     slideSS(curretSlide)
 })
-$('#point-3').click(function(){
+$('#point-3').click(function () {
     curretSlide = 2
     slideSS(curretSlide)
 })
@@ -96,27 +118,27 @@ $('#point-3').click(function(){
 /////////////////////Protfolio/////////////////////////
 ///////////////////////////////////////////////////////
 
-$('.work').mouseenter(function(){
+$('.work').mouseenter(function () {
     $(this).addClass('hover')
     $('.name').addClass('hidden')
 })
-$('.work').mouseleave(function(){
+$('.work').mouseleave(function () {
     $(this).removeClass('hover')
     $('.name').removeClass('hidden')
-})  
-$('.category-item').click(function(){
+})
+$('.category-item').click(function () {
     $('.category-item').removeClass('active')
     $(this).addClass('active')
 })
-$('#all').click(function(){
+$('#all').click(function () {
     $('.work-desc').text('logo')
 })
-$('#photo').click(function(){
+$('#photo').click(function () {
     $('.work-desc').text('Photo design')
 })
-$('#logo').click(function(){
+$('#logo').click(function () {
     $('.work-desc').text('Logo design')
 })
-$('#web').click(function(){
+$('#web').click(function () {
     $('.work-desc').text('Web design')
 })
